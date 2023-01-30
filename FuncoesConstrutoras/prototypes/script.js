@@ -5,7 +5,7 @@ const p1 = {
 
 }
 
-const Product = function(name,price,quantitynt){
+const Product = function(name,price,quantity){
     this.name = name;
     this.pre = price;
     this.quantity = quantity;
@@ -13,6 +13,14 @@ const Product = function(name,price,quantitynt){
     
     Product.prototype.total = function() {
       return this.price * this.quantity;
+    }
+
+    Product.prototype.add = function(amount){
+        return this.quantity += amount;
+    }
+
+    Product.prototype.remove = function(amount){
+        return this.quantity -= amount;
     }
 
 
