@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+}
+.blocos{
+   margin: 20px;
+    width: 90px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+justify-content: center;}
+#container-dos-blocos{
+ display: flex;
+ flex-wrap: wrap;/*Esta propriedade agrupa os elementos na tela,e quando termina ele manda para 
+ baixo*/
+ height: 800px;
+ justify-content: space-around;
+ align-items: center;
+}
